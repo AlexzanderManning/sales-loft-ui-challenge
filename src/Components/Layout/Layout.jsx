@@ -6,7 +6,7 @@ const Layout = ({children}) => {
    grid-gap: 10px;
    margin: 0 10px;
    grid-template-columns: 1fr;
-   @media (min-width: 600px) {
+   @media (min-width: 700px) {
      grid-template-columns: 3fr 6fr 3fr;
    }
  `;
@@ -35,7 +35,7 @@ const Layout = ({children}) => {
 function LeftColumn({ children }){
   const LeftColumn = styled.div`
     order: 2;
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
       order: 1;
     }
   `;
@@ -45,7 +45,7 @@ function LeftColumn({ children }){
 function RightColumn({ children }){
   const RightColumn = styled.div`
     order: 3;
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
       order: 3;
     }
   `;
@@ -58,7 +58,7 @@ function CenterColumn({ children }){
     background-color: #fff;
     margin-top: 10px;
     order: 1;
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
       order: 2;
     }
   `;
